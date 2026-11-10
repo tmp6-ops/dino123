@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Rex Dino Runner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-wrapper">
+    <div class="header">
+      <div class="instructions">Press <span>[Space]</span>, <span>[↑]</span>, or <span>Tap</span> to Jump</div>
+      <div class="sound-toggle" id="soundToggle" title="Toggle Sound">🔊 Sound: ON</div>
+    </div>
+
+    <div class="scoreboard">
+      <span class="high-score">HI <span id="highScoreText">00000</span></span>
+      <span class="score"><span id="scoreText">00000</span></span>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="gameCanvas" width="800" height="250"></canvas>
+      <div id="startOverlay" class="overlay">
+        <h2>PRESS SPACE OR TAP TO START</h2>
+      </div>
+      <div id="gameOverOverlay" class="overlay hidden">
+        <h2>G A M E  O V E R</h2>
+        <button id="restartBtn">RESTART</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
